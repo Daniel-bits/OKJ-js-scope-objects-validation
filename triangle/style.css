@@ -1,0 +1,6 @@
+input[type="number"] {
+inline-size: 5%;
+}
+
+
+input[type="submit"] { margin: 20px; display:block;}
