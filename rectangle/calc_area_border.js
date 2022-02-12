@@ -1,11 +1,11 @@
-function kiszamit() {
+﻿function kiszamit() {
 const egyik = document.getElementById('A');
 const masik = document.getElementById('B');
 const a = parseFloat(egyik.value);
 const b = parseFloat(masik.value);
 
-if(!a) {
-	alert('Baromságokat írt be');
+if(!a || !b || isNaN(value) || !(typeof a === 'number') || !(typeof b === 'number')  {
+	alert("Baromságokat írt be");
 }
 
 let szoveg = "";
@@ -18,7 +18,7 @@ szoveg += "Terület: " + T.toFixed(2);
 
 const kimenet = document.querySelector('#output span');
 kimenet.innerHTML = szoveg;
-/* kimenet.innerHTML = K; */
+
 }
 
 
