@@ -1,7 +1,7 @@
-const loading= document.querySelector("body");
+const loading = document.querySelector("body");
 loading.onload = () => {
-setTimeout(welcome, 2000);
-function welcome() {confirm("Üdvözlet a játékban!\nÚJ JÁTÉK: szám generáltatása\nMEHET: tipp beküldése\nMUTAT: súgó a számról");}
+	setTimeout(welcome, 2000);
+	function welcome() {confirm("Üdvözlet a játékban!\nÚJ JÁTÉK: szám generáltatása\nMEHET: tipp beküldése\nMUTAT: súgó a számról");}
 };
 
 let text = "";
@@ -10,8 +10,9 @@ function mainGame() {
 
  	const szam = Math.floor(Math.random() * 100) + 1;
 
-	const clickButton = document.querySelector("input[name='generate-result']");
 	let outputTag = document.getElementById("output");
+	const clickButton = document.querySelector("input[name='generate-result']");
+
 	clickButton.addEventListener('click', function(){
 
 	let tipp = document.querySelector("[id='user-input']");
