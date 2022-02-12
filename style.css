@@ -1,0 +1,29 @@
+
+body {
+	background-image: url('https://download.hipwallpaper.com/desktop/1920/1080/34/97/4HZAoz.jpg');
+}
+#container {
+	color: gold;
+	border-radius: 8px;
+	max-width: 390px;
+}
+#user-input {
+	inline-size: 15%;
+	margin: 10px 0 10px;
+}
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+[name] {
+	flex-basis: auto;
+	inline-size: 7%;
+	margin: 1em;
+	margin-left: 10px;
+	color:green;
+}
+p {
+	margin-top:1%;
+	margin-bottom: 1%;
+}
