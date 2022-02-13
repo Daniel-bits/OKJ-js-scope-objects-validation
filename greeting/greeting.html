@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Köszöntés</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<button onclick="openWindow();" type="submit">Köszöntés</button>
+<script type= "text/javascript">
+	function openWindow() {
+		let timeToday = new Date().getHours();
+		timeToday = 24 % 4;
+		console.log(timeToday);
+		let greeting = "";
+		switch (timeToday) {
+			case 0: greeting += "Jó napot";
+				break;
+			case 1: greeting += "Jó napot";
+				break;
+			case 2: greeting += "Jó napot";
+				break;
+			case 3: greeting += "Jó napot";
+				break;
+
+		}
+
+		const newWindow = window.open('','','width=300, height=300');
+
+		newWindow.document.write("<p>This is My Web Page</p>");
+//how do i write in a new window
+		window.close(); //ez is
+	}
+</script>
+</body>
+
+</html>
