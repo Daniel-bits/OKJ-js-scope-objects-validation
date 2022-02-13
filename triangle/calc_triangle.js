@@ -6,11 +6,13 @@
 	const b = parseFloat(bOldal.value);
 	const c = parseFloat(cOldal.value);
 
-	validate(a, b, c);
+	const result = validate(a, b, c);
+	if (!result) return;
 
 	let szoveg = "";
 
 	const K = a + b + c;
+console.log(K);
 	const s = K / 2;
 	const T = Math.sqrt(s * (s - a)*(s - b)*(s - c));
 

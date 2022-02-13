@@ -5,7 +5,8 @@ const a = parseFloat(egyik.value);
 const b = parseFloat(masik.value);
 
 if(!a || !b || Number.isNaN(a) || Number.isNaN(b))  {
-	alert("Baromságokat írt be");
+	alert("Baromságokat írt be\nPróbálja újból");
+	return;
 }
 
 let szoveg = "";
