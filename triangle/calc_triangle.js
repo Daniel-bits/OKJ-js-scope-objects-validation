@@ -25,10 +25,11 @@
 let validate = (a, b, c) => {
 	if (!a || !b || !c || Number.isNaN(a) || Number.isNaN(b) || Number.isNaN(c)) {
 		alert("Baromságokat írt be");
-		return;
+		return false;
 	}
 	if ((a + b <= c) || (b + c <= a) || (c + a <= b)) {
 		alert("Nem háromszöget adott meg");
-		return;
+		return false;
 	}
+	return true;
 }

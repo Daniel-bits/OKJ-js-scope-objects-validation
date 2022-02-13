@@ -1,4 +1,4 @@
-const execution = document.querySelector('button');
+﻿const execution = document.querySelector('button');
 execution.onclick = () => {
 
 	const days = document.getElementById('napok');
@@ -30,7 +30,7 @@ execution.onclick = () => {
 		default:
 			confirm("Nem megfelelő számot adott meg");
 			output = "";
-
+			break;
 	}
 	const op = document.querySelector('#output span');
 	op.innerHTML = output;
