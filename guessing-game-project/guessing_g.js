@@ -1,4 +1,4 @@
-const loading = document.querySelector("body");
+﻿const loading = document.querySelector("body");
 loading.onload = () => {
 	setTimeout(welcome, 2000);
 	function welcome() {confirm("Üdvözlet a játékban!\nÚJ JÁTÉK: szám generáltatása\nMEHET: tipp beküldése\nMUTAT: súgó a számról");}
@@ -20,7 +20,7 @@ function mainGame() {
 		tipp = isNaN(tipp) ? 0 : tipp;
 
 		if (!tipp || tipp < 1 || tipp > 100) {
-			text = "Rosszat adott meg\nÍrjon be újat!";
+			text = "Rosszat adott meg" + "<br>" + "Írjon be újat!";
 			container.style.backgroundColor = 'Red';
 			outputTag.textContent = "";
 		}
