@@ -12,7 +12,6 @@
 	let szoveg = "";
 
 	const K = a + b + c;
-console.log(K);
 	const s = K / 2;
 	const T = Math.sqrt(s * (s - a)*(s - b)*(s - c));
 
